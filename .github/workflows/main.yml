@@ -1,0 +1,12 @@
+name: Scheduler
+on:
+ schedule:
+   - cron: '*/1 * * * *'
+
+jobs:
+ hello_World: 
+   runs-on: ubuntu-latet
+   steps:
+      - name: Echo diplay time
+      run: echo "the currrent time is $(date)"
+      
